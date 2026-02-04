@@ -10,7 +10,7 @@ import {
   withTimeout,
 } from "@/lib/apiUtils";
 import ERROR_MESSAGES from "@/lib/errorMessages";
-import { getTextbookImages, getImagePartsForGemini } from "@/lib/textbookImageHelper";
+import { getTextbookImages, getImagePartsForGemini, getTrainingImagePartsForGemini } from "@/lib/textbookImageHelper";
 
 // System prompt for generating quiz questions based on textbook content
 const QUIZ_SYSTEM_PROMPT = `তুমি একজন শিক্ষক সহায়ক যিনি পাঠ্যবইয়ের বিষয়বস্তু থেকে MCQ প্রশ্ন তৈরি করেন। বাংলাদেশের প্রাথমিক বিদ্যালয়ের শিক্ষার্থীদের জন্য প্রশ্ন তৈরি করো।
@@ -34,6 +34,28 @@ JSON ফরম্যাটে উত্তর দাও:
   {"question": "প্রশ্ন?", "options": ["অপশন ১", "অপশন ২", "অপশন ৩", "অপশন ৪"], "correctAnswer": 0, "explanation": "ব্যাখ্যা"}
 ]`;
 
+// System prompt for training module quiz - more detailed for teacher training
+const TRAINING_QUIZ_SYSTEM_PROMPT = `তুমি একজন শিক্ষক প্রশিক্ষণ মূল্যায়নকারী। শিক্ষক সহায়িকার বিষয়বস্তু থেকে MCQ প্রশ্ন তৈরি করো যা শিক্ষকদের বোঝাপড়া যাচাই করবে।
+
+CRITICAL LANGUAGE INSTRUCTION:
+- You MUST write ONLY in Bengali language (বাংলা ভাষা)
+- DO NOT use Hindi or Devanagari script (हिंदी लिपि नहीं)
+- Use Bengali script exclusively (শুধু বাংলা লিপি)
+
+নিয়ম:
+- ছবিতে দেখানো শিক্ষক সহায়িকার বিষয়বস্তু মনোযোগ দিয়ে পড়ো
+- সেই বিষয়বস্তুর মূল ধারণা, পদ্ধতি, ও শিক্ষণীয় বিষয় থেকে প্রশ্ন করো
+- শিক্ষকদের পেশাগত দক্ষতা যাচাই করার মতো প্রশ্ন তৈরি করো
+- প্রতিটি প্রশ্নে ৪টি অপশন থাকবে
+- সঠিক উত্তরের ইনডেক্স দাও (০-৩)
+- ব্যাখ্যায় কেন এই উত্তর সঠিক তা স্পষ্ট করো
+- প্রশ্নগুলো ছবিতে দেখানো নির্দিষ্ট বিষয়বস্তু থেকেই হতে হবে
+
+JSON ফরম্যাটে উত্তর দাও:
+[
+  {"question": "প্রশ্ন?", "options": ["অপশন ১", "অপশন ২", "অপশন ৩", "অপশন ৪"], "correctAnswer": 0, "explanation": "ব্যাখ্যা"}
+]`;
+
 interface RequestBody {
   topicId: string;
   topicName?: string;
@@ -43,8 +65,11 @@ interface RequestBody {
   chapterId?: string;
   startPage?: number;
   endPage?: number;
-  questionCount?: number; // NEW: Number of questions to generate (3-10)
-  difficulty?: "easy" | "medium" | "hard"; // NEW: Optional difficulty level
+  questionCount?: number; // Number of questions to generate (3-10)
+  difficulty?: "easy" | "medium" | "hard"; // Optional difficulty level
+  trainingImages?: string[]; // Training module images (local paths)
+  isTrainingQuiz?: boolean; // Whether this is for training module
+  courseName?: string; // Training course name
 }
 
 export async function POST(request: NextRequest) {
@@ -107,6 +132,16 @@ export async function POST(request: NextRequest) {
       difficulty: {
         type: "string",
       },
+      trainingImages: {
+        type: "array",
+      },
+      isTrainingQuiz: {
+        type: "boolean",
+      },
+      courseName: {
+        type: "string",
+        maxLength: 200,
+      },
     });
 
     if (!validation.valid) {
@@ -116,7 +151,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { topicId, topicName, chapterName, classId, subjectId, chapterId, startPage, endPage, questionCount, difficulty } = validation.data!;
+    const { topicId, topicName, chapterName, classId, subjectId, chapterId, startPage, endPage, questionCount, difficulty, trainingImages, isTrainingQuiz, courseName } = validation.data!;
 
     // Validate and set question count (default to 5, must be between 3-10)
     const numQuestions = questionCount && questionCount >= 3 && questionCount <= 10 ? questionCount : 5;
@@ -124,6 +159,7 @@ export async function POST(request: NextRequest) {
     // Sanitize inputs
     const sanitizedTopicName = topicName ? sanitizeString(topicName) : "টপিক";
     const sanitizedChapterName = chapterName ? sanitizeString(chapterName) : "পাঠ";
+    const sanitizedCourseName = courseName ? sanitizeString(courseName) : "প্রশিক্ষণ";
     const difficultyText = difficulty === "easy" ? "সহজ" : difficulty === "hard" ? "কঠিন" : "মাঝারি";
 
     // Check API key
@@ -139,14 +175,30 @@ export async function POST(request: NextRequest) {
 
     try {
       const genAI = new GoogleGenerativeAI(apiKey!);
+
+      // Use different system prompt for training vs regular quiz
+      const systemPrompt = isTrainingQuiz ? TRAINING_QUIZ_SYSTEM_PROMPT : QUIZ_SYSTEM_PROMPT;
+
       const model = genAI.getGenerativeModel({
         model: "models/gemini-2.0-flash",
-        systemInstruction: QUIZ_SYSTEM_PROMPT,
+        systemInstruction: systemPrompt,
       });
 
-      // Fetch textbook images if page info is provided
+      // Fetch images - training images (local) or textbook images (remote)
       let imageParts: any[] = [];
-      if (classId && subjectId && chapterId && startPage && endPage) {
+
+      if (isTrainingQuiz && trainingImages && trainingImages.length > 0) {
+        // Training module - fetch local images
+        try {
+          console.log(`Fetching ${trainingImages.length} training images for quiz generation`);
+          imageParts = await getTrainingImagePartsForGemini(trainingImages);
+          console.log(`Successfully loaded ${imageParts.length} training images`);
+        } catch (imageError) {
+          console.error("Error fetching training images:", imageError);
+          // Continue without images - will use topic name only
+        }
+      } else if (classId && subjectId && chapterId && startPage && endPage) {
+        // Regular textbook quiz - fetch remote images
         try {
           const images = await getTextbookImages(classId, subjectId, chapterId, startPage, endPage);
           const imageUrls = images.map(img => img.url);
@@ -157,7 +209,23 @@ export async function POST(request: NextRequest) {
         }
       }
 
-      const prompt = `টপিক: ${sanitizedTopicName}
+      // Build prompt based on quiz type
+      let prompt: string;
+
+      if (isTrainingQuiz) {
+        prompt = `মডিউল: ${sanitizedCourseName}
+অধ্যায়: ${sanitizedChapterName}
+টপিক: ${sanitizedTopicName}
+
+${imageParts.length > 0 ? `উপরের শিক্ষক সহায়িকার ${imageParts.length}টি পৃষ্ঠার বিষয়বস্তু মনোযোগ দিয়ে পড়ো এবং সেই বিষয়বস্তু থেকে` : "এই টপিকের উপর ভিত্তি করে"} ${numQuestions}টি MCQ প্রশ্ন তৈরি করো যা:
+- শিক্ষকদের এই বিষয়ে বোঝাপড়া যাচাই করবে
+- ছবিতে দেখানো নির্দিষ্ট তথ্য ও ধারণা থেকে প্রশ্ন করো
+- শিক্ষণ পদ্ধতি, শ্রেণি ব্যবস্থাপনা, বা বিষয়ভিত্তিক জ্ঞান যাচাই করবে
+- প্রতিটি প্রশ্ন ছবির বিষয়বস্তুর সাথে সরাসরি সম্পর্কিত হতে হবে
+
+শুধু JSON অ্যারে দাও, অন্য কিছু না:`;
+      } else {
+        prompt = `টপিক: ${sanitizedTopicName}
 অধ্যায়: ${sanitizedChapterName}
 ${startPage && endPage ? `পৃষ্ঠা: ${startPage} - ${endPage}` : ""}
 অসুবিধার স্তর: ${difficultyText}
@@ -169,6 +237,7 @@ ${imageParts.length > 0 ? "উপরের পাঠ্যবইয়ের ছ
 - ${difficultyText} স্তরের হবে
 
 শুধু JSON অ্যারে দাও, অন্য কিছু না:`;
+      }
 
       // Build content parts (images + text)
       const contentParts = [...imageParts, { text: prompt }];

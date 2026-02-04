@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { getCurrentUser, type SessionUser } from "@/lib/auth";
 import {
-  PROFESSIONALISM_TRAINING,
+  TRAINING_COURSES,
   isTopicCompleted,
   toBengaliNumber,
+  type TrainingCourse,
   type TrainingChapter,
 } from "@/lib/data";
 
@@ -16,6 +17,7 @@ export default function CourseDetailPage() {
   const courseId = params.courseId as string;
 
   const [user, setUser] = useState<SessionUser | null>(null);
+  const [course, setCourse] = useState<TrainingCourse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -26,16 +28,18 @@ export default function CourseDetailPage() {
     }
     setUser(currentUser);
 
-    // Verify this is the professionalism training course
-    if (courseId !== PROFESSIONALISM_TRAINING.id) {
+    // Find the course by ID
+    const foundCourse = TRAINING_COURSES.find(c => c.id === courseId);
+    if (!foundCourse) {
       router.push("/training");
       return;
     }
+    setCourse(foundCourse);
 
     setIsLoading(false);
   }, [router, courseId]);
 
-  if (isLoading || !user) {
+  if (isLoading || !user || !course) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
         <div className="text-center">
@@ -49,10 +53,10 @@ export default function CourseDetailPage() {
   // Calculate overall progress
   let totalTopics = 0;
   let completedTopics = 0;
-  PROFESSIONALISM_TRAINING.chapters.forEach(chapter => {
+  course.chapters.forEach(chapter => {
     chapter.topics.forEach(topic => {
       totalTopics++;
-      if (isTopicCompleted(user.id, PROFESSIONALISM_TRAINING.id, chapter.id, topic.id)) {
+      if (isTopicCompleted(user.id, course.id, chapter.id, topic.id)) {
         completedTopics++;
       }
     });
@@ -74,7 +78,7 @@ export default function CourseDetailPage() {
               </svg>
             </button>
             <div>
-              <h1 className="text-lg font-bold text-slate-800">{PROFESSIONALISM_TRAINING.name}</h1>
+              <h1 className="text-lg font-bold text-slate-800">{course.name}</h1>
               <p className="text-xs text-slate-500">সেশন নির্বাচন করুন</p>
             </div>
           </div>
@@ -119,7 +123,7 @@ export default function CourseDetailPage() {
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-2">
             <div className="bg-white/10 rounded-lg p-2.5 text-center">
-              <p className="text-xl font-bold">{toBengaliNumber(PROFESSIONALISM_TRAINING.chapters.length)}</p>
+              <p className="text-xl font-bold">{toBengaliNumber(course.chapters.length)}</p>
               <p className="text-xs text-white/70">সেশন</p>
             </div>
             <div className="bg-white/10 rounded-lg p-2.5 text-center">
@@ -137,11 +141,11 @@ export default function CourseDetailPage() {
         <div>
           <h2 className="text-base font-bold text-slate-800 mb-3">অধ্যায় সমূহ</h2>
           <div className="grid grid-cols-1 gap-3">
-            {PROFESSIONALISM_TRAINING.chapters.map((chapter, index) => (
+            {course.chapters.map((chapter, index) => (
               <SessionCard
                 key={chapter.id}
                 chapter={chapter}
-                courseId={PROFESSIONALISM_TRAINING.id}
+                courseId={course.id}
                 userId={user.id}
                 index={index}
                 router={router}

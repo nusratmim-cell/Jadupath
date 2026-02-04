@@ -9,6 +9,14 @@
  * - Utility functions
  */
 
+// Import training types (defined separately to avoid circular dependencies)
+import type {
+  TrainingTopic,
+  TrainingChapter,
+  TrainingCourse,
+  TeacherTrainingProgress,
+} from './training-types';
+
 // ==================== TYPES ====================
 
 export interface Topic {
@@ -165,46 +173,14 @@ export interface ReportCard {
 }
 
 // ==================== TRAINING TYPES ====================
+// Re-exported from training-types.ts to avoid circular dependencies
 
-export interface TrainingTopic {
-  id: string;
-  name: string;
-  duration: string;
-  description?: string;
-  pdfUrl?: string;
-  pdfStartPage?: number;
-  video?: {
-    url: string;
-    duration: string;
-  };
-  quiz?: QuizQuestion[];
-}
-
-export interface TrainingChapter {
-  id: string;
-  name: string;
-  topics: TrainingTopic[];
-}
-
-export interface TrainingCourse {
-  id: string;
-  name: string;
-  description?: string;
-  icon: string;
-  color: string;
-  chapters: TrainingChapter[];
-}
-
-export interface TeacherTrainingProgress {
-  teacherId: string;
-  courseId: string;
-  chapterId: string;
-  topicId: string;
-  completed: boolean;
-  quizScore?: number;
-  completedAt?: string;
-  attempts: number;
-}
+export type {
+  TrainingTopic,
+  TrainingChapter,
+  TrainingCourse,
+  TeacherTrainingProgress,
+} from './training-types';
 
 // ==================== SUBJECTS ====================
 
@@ -295,16 +271,14 @@ export const CHAPTERS_DATA: { [classId: string]: { [subjectId: string]: Chapter[
 
 // ==================== TRAINING COURSES ====================
 
-// Empty placeholder training course
-export const PROFESSIONALISM_TRAINING: TrainingCourse = {
-  id: "professionalism",
-  name: "Professional Development",
-  icon: "🎓",
-  color: "from-blue-500 to-indigo-600",
-  chapters: [],
-};
+// Import training content from generated data
+import { ALL_TRAINING_MODULES, M02_PROFESSIONALISM } from './training-content';
 
-export const TRAINING_COURSES: TrainingCourse[] = [];
+// Main professionalism course (backward compatibility)
+export const PROFESSIONALISM_TRAINING: TrainingCourse = M02_PROFESSIONALISM;
+
+// All training courses
+export const TRAINING_COURSES: TrainingCourse[] = ALL_TRAINING_MODULES;
 
 // ==================== STORAGE KEYS ====================
 

@@ -1,0 +1,312 @@
+{
+  "id": "m02-professionalism",
+  "name": "শিক্ষকতায় পেশাদারিত্ব ও আইনি কাঠামো",
+  "description": "শিক্ষকতায় পেশাদারিত্ব ও আইনি কাঠামো প্রশিক্ষণ মডিউল",
+  "icon": "📚",
+  "color": "from-purple-500 to-pink-600",
+  "chapters": [
+    {
+      "id": "M02_C01",
+      "name": "শিক্ষকতা পেশার ভিত্তি ও মানদণ্ড",
+      "displayOrder": 1,
+      "topics": [
+        {
+          "id": "M02_C01_T01",
+          "name": "পেশা হিসেবে শিক্ষকতা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T01/1_9.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T01/2_10.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C01_T02",
+          "name": "শিক্ষকের দায়িত্ব ও কর্তব্য",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/1_11.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/2_12.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/3_13.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/4_14.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C01_T03",
+          "name": "শিক্ষকমান ও পারদর্শিতার সূচক",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/1_15.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/2_16.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/3_17.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/4_18.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/5_19.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/6_20.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C01_T04",
+          "name": "শিক্ষকের পেশাগত অঙ্গীকার ও দায়বদ্ধতা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/1_21.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/2_22.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/3_23.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/4_24.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/5_25.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/6_26.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/7_27.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C01_T05",
+          "name": "শিক্ষকতা পেশায় প্রয়োজনীয় দক্ষতা",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/1_28.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/2_29.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/3_30.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/4_31.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C01_T06",
+          "name": "পেশাগত দক্ষতা উন্নয়নের উপায় ও সুযোগ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/1_32.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/2_33.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/3_34.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/4_35.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/5_36.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/6_37.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/7_38.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M02_C02",
+      "name": "পেশাগত নৈতিকতা, সম্পর্ক ও অভিযোজন",
+      "displayOrder": 2,
+      "topics": [
+        {
+          "id": "M02_C02_T01",
+          "name": "শিক্ষকতা পেশায় সহমর্মিতা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T01/1_39.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C02_T02",
+          "name": "শিক্ষকতায় পেশাগত মূল্যবোধ ও সম্পর্ক স্থাপন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/1_40.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/2_41.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/3_42.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C02_T03",
+          "name": "শিক্ষকতা পেশায় শিষ্টাচার ও নৈতিকতা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/1_43.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/2_44.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/3_45.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/4_46.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/5_47.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C02_T04",
+          "name": "জরুরি পরিস্থিতিতে শিখন-শেখানো কার্যক্রম",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/1_48.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/2_49.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/3_50.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/4_51.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/5_52.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/6_53.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M02_C03",
+      "name": "আইনি কাঠামো, আচরণ ও শৃঙ্খলা",
+      "displayOrder": 3,
+      "topics": [
+        {
+          "id": "M02_C03_T01",
+          "name": "সাংবিধানিক অঙ্গীকার এবং প্রাথমিক শিক্ষা (বাধ্যতামূলককরণ) আইন, ১৯৯০",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/1_54.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/2_55.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/3_56.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/4_57.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/5_58.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C03_T02",
+          "name": "সরকারি চাকরি আইন, ২০১৮",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/1_59.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/2_60.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/3_61.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/4_62.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/5_63.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/6_64.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/7_65.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/8_66.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/9_67.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/10_68.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C03_T03",
+          "name": "সরকারি কর্মচারী (আচরণ) বিধিমালা, ১৯৭৯",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/1_69.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/2_70.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/3_71.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/4_72.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/5_73.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C03_T04",
+          "name": "সরকারি কর্মচারী (শৃঙ্খলা ও আপিল) বিধিমালা, ২০১৮",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/1_73.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/2_74.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/3_75.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/4_76.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/5_77.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/6_78.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/7_79.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/8_80.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/9_81.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/10_82.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/11_83.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C03_T05",
+          "name": "সরকারি কর্মচারী (নিয়মিত উপস্থিতি) বিধিমালা, ২০১৯",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T05/1_84.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T05/2_85.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M02_C04",
+      "name": "চাকরি ব্যবস্থাপনা ও বিবিধ বিধিবিধান",
+      "displayOrder": 4,
+      "topics": [
+        {
+          "id": "M02_C04_T01",
+          "name": "ছুটি বিধিমালা, ১৯৫৯",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/1_86.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/2_87.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/3_88.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/4_89.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C04_T02",
+          "name": "সরকারি প্রতিষ্ঠানে সামাজিক যোগাযোগ মাধ্যম ব্যবহার নির্দেশিকা ২০১৯ ও সংশ্লিষ্ট পরিপত্র",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/1_90.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/2_91.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/3_92.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/4_93.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/5_94.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/6_95.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/7_96.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/8_97.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C04_T03",
+          "name": "চাকরিতে বিভাগীয় সুযোগ-সুবিধা ও চাকুরি বহি",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/1_98.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/2_99.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/3_100.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M02_C04_T04",
+          "name": "বার্ষিক গোপনীয় অনুবেদন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/1_101.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/2_102.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/3_103.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/4_104.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/5_105.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/6_106.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/7_107.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/8_108.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/9_109.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/10_110.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/11_111.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    }
+  ]
+}

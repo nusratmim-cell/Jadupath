@@ -1,0 +1,438 @@
+{
+  "id": "m05-bangla",
+  "name": "বাংলা শিখন-শেখানো কৌশল",
+  "description": "বাংলা শিখন-শেখানো কৌশল প্রশিক্ষণ মডিউল",
+  "icon": "🔤",
+  "color": "from-blue-500 to-cyan-600",
+  "chapters": [
+    {
+      "id": "M05_C01",
+      "name": "অধ্যায় ১ শিক্ষাক্রম ও পাঠ্যপুস্তক পরিচিতি",
+      "displayOrder": 1,
+      "topics": [
+        {
+          "id": "M05_C01_T01",
+          "name": "বাংলা শিক্ষাক্রম পরিচিতি",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T01/1_9.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T01/2_10.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C01_T02",
+          "name": "বাংলা পাঠ্যপুস্তক ও শিক্ষক সহায়িকা পর্যালোচনা (প্রাক-প্রাথমিক, প্রথম ও দ্বিতীয় শ্রেণি)",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T02/1_20.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T02/2_21.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T02/3_22.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C01_T03",
+          "name": "বাংলা পাঠ্যপুস্তক ও শিক্ষক সহায়িকা পর্যালোচনা (তৃতীয় থেকে পঞ্চম শ্রেণি)",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T03/1_20.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T03/2_21.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C01/M05_C01_T03/3_22.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M05_C02",
+      "name": "অধ্যায় ২ ভাষাদক্ষতা ও ভাষিক কাজ",
+      "displayOrder": 2,
+      "topics": [
+        {
+          "id": "M05_C02_T01",
+          "name": "ভাষাদক্ষতা বিকাশ (গ্রহণমূলক দক্ষতা শোনা ও পড়া)",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T01/1_11.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T01/2_12.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T01/3_13.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T01/4_14.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C02_T02",
+          "name": "ভাষাদক্ষতা বিকাশ (প্রকাশমূলক দক্ষতা বলা ও লেখা)",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T02/1_15.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T02/2_16.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T02/3_17.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T02/4_18.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T02/5_19.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C02_T03",
+          "name": "বাংলা পাঠ্যপুস্তকে ভাষিক কাজ (প্রাক-প্রাথমিক, প্রথম ও দ্বিতীয় শ্রেণি)",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T03/1_23.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T03/2_24.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T03/3_25.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T03/4_26.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T03/5_27.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C02_T04",
+          "name": "বাংলা পাঠ্যপুস্তকে ভাষিক কাজ (তৃতীয় থেকে পঞ্চম শ্রেণি)",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T04/1_28.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T04/2_29.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T04/3_30.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C02/M05_C02_T04/4_31.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M05_C03",
+      "name": "অধ্যায় ৩ ধ্বনিবিজ্ঞান, উচ্চারণরীতি ও বর্ণজ্ঞান",
+      "displayOrder": 3,
+      "topics": [
+        {
+          "id": "M05_C03_T01",
+          "name": "বাংলা স্বরধ্বনি পরিচয় ও প্রমিত উচ্চারণবিধি",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T01/1_36.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T01/2_37.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T01/3_38.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T01/4_39.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T02",
+          "name": "বাংলা ব্যঞ্জনধ্বনি পরিচয় ও প্রমিত উচ্চারণবিধি",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T02/1_40.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T02/2_41.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T02/3_42.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T03",
+          "name": "ধ্বনি সচেতনতা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T03/1_43.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T03/2_44.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T03/3_45.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T04",
+          "name": "বাংলা ভাষার বর্ণপ্রকরণ  বর্ণ, যুক্তবর্ণ, কার ও ফলা চিহ্ন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T04/1_46.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T04/2_47.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T04/3_48.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T04/4_49.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T05",
+          "name": "বর্ণজ্ঞান ও শিখন-শেখানো কৌশল",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T05/1_50.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T05/2_51.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T05/3_52.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T05/4_53.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T06",
+          "name": "বাংলা যুক্তবর্ণের উচ্চারণরীতি",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T06/1_54.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T06/2_55.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T06/3_56.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T06/4_57.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C03_T07",
+          "name": "যুক্তবর্ণ শিখন-শেখানো কৌশল",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T07/1_58.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T07/2_59.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C03/M05_C03_T07/3_60.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M05_C04",
+      "name": "অধ্যায় ৪ পঠন দক্ষতা ও বোধগম্যতা",
+      "displayOrder": 4,
+      "topics": [
+        {
+          "id": "M05_C04_T01",
+          "name": "পড়তে শেখা ও পড়ে শেখা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T01/1_32.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T01/2_33.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T01/3_34.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T01/4_35.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C04_T02",
+          "name": "শব্দজ্ঞান শিখন-শেখানো কৌশল ও প্রয়োগ অনুশীলন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T02/1_61.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T02/2_62.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T02/3_63.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C04_T03",
+          "name": "পঠন সাবলীলতা শিখন-শেখানো কৌশল ও প্রয়োগ অনুশীলন",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T03/1_64.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T03/2_65.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T03/3_66.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T03/4_67.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C04_T04",
+          "name": "বোধগম্যতার কৌশল ও অনুশীলন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T04/1_68.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T04/2_69.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T04/3_70.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C04_T05",
+          "name": "ছবি পড়া ও ছবির পাঠ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T05/1_71.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C04/M05_C04_T05/2_72.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M05_C05",
+      "name": "অধ্যায় ৫ সাহিত্যপাঠ ও লিখন দক্ষতা",
+      "displayOrder": 5,
+      "topics": [
+        {
+          "id": "M05_C05_T01",
+          "name": "ছড়া ও কবিতা পঠনরীতি",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T01/1_73.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T01/2_74.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T02",
+          "name": "ছড়া ও কবিতা শিখন-শেখানো কৌশল",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T02/1_75.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T03",
+          "name": "গল্প, প্রবন্ধ ও কথোপকথনধর্মী রচনা শিখন-শেখানো কৌশল",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T03/1_76.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T03/2_77.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T03/3_78.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T04",
+          "name": "গল্প, প্রবন্ধ ও কথোপকথনধর্মী রচনা শিখন-শেখানো কৌশল অনুশীলন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T04/1_79.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T05",
+          "name": "লেখা শেখা ও লিখন অনুশীলন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T05/1_80.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T05/2_81.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T06",
+          "name": "সৃজনশীল লেখা ও অনুচ্ছেদ লেখা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T06/1_82.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T06/2_83.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T07",
+          "name": "বাংলা বানানের নিয়ম",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T07/1_84.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T07/2_85.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T07/3_86.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T07/4_87.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C05_T08",
+          "name": "যতি বা ছেদ চিহ্ন পরিচিতি ও ব্যবহার",
+          "duration": "২০ মিনিট",
+          "displayOrder": 8,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T08/1_88.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T08/2_89.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T08/3_90.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C05/M05_C05_T08/4_91.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M05_C06",
+      "name": "অধ্যায় ৬ শিখন পরিকল্পনা, উপকরণ ও মূল্যায়ন",
+      "displayOrder": 6,
+      "topics": [
+        {
+          "id": "M05_C06_T01",
+          "name": "ভাষা শিখনে সম্পূরক উপকরণ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T01/1_92.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T01/2_93.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T01/3_94.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T01/4_95.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C06_T02",
+          "name": "শ্রেণিকক্ষে বাংলা ভাষা দক্ষতার মূল্যায়ন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T02/1_96.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T02/2_97.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T02/3_98.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T02/4_99.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C06_T03",
+          "name": "বাংলা পাঠদানে প্রযুক্তির ব্যবহার",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T03/1_100.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C06_T04",
+          "name": "বাংলা বিষয়ে পাঠপরিকল্পনা প্রণয়ন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T04/1_101.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T04/2_102.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M05_C06_T05",
+          "name": "বাংলা বিষয়ে পাঠপরিকল্পনা অনুযায়ী শিখন-শেখানো অনুশীলন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T05/1_103.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M05/M05_C06/M05_C06_T05/2_104.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    }
+  ]
+}

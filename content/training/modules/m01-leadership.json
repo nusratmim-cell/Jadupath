@@ -1,0 +1,504 @@
+{
+  "id": "m01-leadership",
+  "name": "নেতৃত্ব ও বিদ্যালয় ব্যবস্থাপনা",
+  "description": "নেতৃত্ব ও বিদ্যালয় ব্যবস্থাপনা প্রশিক্ষণ মডিউল",
+  "icon": "👔",
+  "color": "from-indigo-500 to-blue-600",
+  "chapters": [
+    {
+      "id": "M01_C01",
+      "name": "নেতৃত্বের মৌলিক ধারণা ও দক্ষতা",
+      "displayOrder": 1,
+      "topics": [
+        {
+          "id": "M01_C01_T01",
+          "name": "নেতা ও নেতৃত্ব",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/1_8.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/2_9.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/3_10.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/4_11.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/5_12.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/6_13.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/7_14.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T01/8_15.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T02",
+          "name": "শিক্ষকের নেতৃত্বের গুণাবলি",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T02/1_16.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T02/2_17.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T02/3_18.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T02/4_19.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T02/5_20.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T03",
+          "name": "নেতৃত্বের দক্ষতার উন্নয়ন লক্ষ্য নির্ধারণ ও অর্জন নিশ্চিতকরণ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T03/1_21.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T03/2_22.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T03/3_23.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T03/4_24.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T04",
+          "name": "নেতৃত্বের দক্ষতার উন্নয়ন টিম বিল্ডিং ও দ্বন্দ্ব নিরসন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/1_25.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/2_26.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/3_27.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/4_28.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/5_29.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T04/6_30.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T05",
+          "name": "নেতৃত্বের দক্ষতার উন্নয়ন মডেলিং",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T05/1_31.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T05/2_32.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T05/3_33.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T06",
+          "name": "নেতৃত্বের দক্ষতার উন্নয়ন Resilience",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/1_34.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/2_35.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/3_36.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/4_37.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/5_38.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/6_39.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T06/7_40.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C01_T07",
+          "name": "বিদ্যালয়ে উদ্ভাবন, কাইজেন এবং উত্তম চর্চার অনুশীলন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T07/1_136.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T07/2_137.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T07/3_138.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T07/4_139.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C01/M01_C01_T07/5_140.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M01_C02",
+      "name": "বিদ্যালয় প্রশাসন ও পরিকল্পনা ব্যবস্থাপনা",
+      "displayOrder": 2,
+      "topics": [
+        {
+          "id": "M01_C02_T01",
+          "name": "বিদ্যালয় পর্যায়ে শিক্ষা প্রশাসন ও ব্যবস্থাপনা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T01/1_52.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T01/2_53.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T01/3_54.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T01/4_55.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T01/5_56.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T02",
+          "name": "বিদ্যালয়ের তথ্য ব্যবস্থাপনা",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T02/1_57.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T02/2_58.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T02/3_59.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T03",
+          "name": "বিদ্যালয়ের অর্থ ও সম্পদ ব্যবস্থাপনা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T03/1_60.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T03/2_61.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T03/3_62.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T03/4_63.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T03/5_64.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T04",
+          "name": "সরকারি কর্মসম্পাদন পরিবীক্ষণ পদ্ধতি (জিপিএমএস)",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T04/1_65.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T04/2_66.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T04/3_67.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T04/4_68.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T04/5_69.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T05",
+          "name": "বিদ্যালয় ব্যবস্থাপনা কমিটি এবং শিক্ষক অভিভাবক সমিতি",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T05/1_70.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T05/2_71.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T05/3_72.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T05/4_73.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T05/5_74.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T06",
+          "name": "বিদ্যালয়ের বার্ষিক কর্মপরিকল্পনা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T06/1_75.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T06/2_76.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T06/3_77.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T07",
+          "name": "বিদ্যালয় পর্যায়ে উন্নয়ন পরিকল্পনা (SLIP) ও উপজেলা প্রাথমিক শিক্ষা পরিকল্পনা (UPEP)",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/1_78.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/2_79.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/3_80.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/4_81.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/5_82.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/6_83.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/7_84.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/8_85.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/9_86.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T07/10_87.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T08",
+          "name": "বিদ্যালয়ের ক্যাচমেন্ট এলাকার ম্যাপ, শিশু জরিপ, শিশু ভর্তি ও উপস্থিতি",
+          "duration": "২০ মিনিট",
+          "displayOrder": 8,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T08/1_88.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T08/2_89.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T08/3_90.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T08/4_91.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T08/5_92.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T09",
+          "name": "বার্ষিক পাঠ পরিকল্পনা এবং ক্লাস রুটিন প্রণয়ন ও বাস্তবায়ন",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 9,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/1_93.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/2_94.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/3_95.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/4_96.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/5_97.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/6_98.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/7_99.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/8_100.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T09/9_101.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C02_T10",
+          "name": "বিদ্যালয় উন্নয়ন কার্যক্রমে অংশীজনদের সম্পৃক্তকরণ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 10,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T10/1_102.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T10/2_103.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C02/M01_C02_T10/3_104.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M01_C03",
+      "name": "একাডেমিক নেতৃত্ব ও শিখন পরিবেশ",
+      "displayOrder": 3,
+      "topics": [
+        {
+          "id": "M01_C03_T01",
+          "name": "শিক্ষাক্রম বাস্তবায়নে নেতৃত্ব",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T01/1_41.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T01/2_42.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T01/3_43.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C03_T02",
+          "name": "Foundational Literacy and Numeracy (FLN) উন্নয়নে নেতৃত্ব",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T02/1_44.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T02/2_45.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T02/3_46.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T02/4_47.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C03_T03",
+          "name": "বিদ্যালয়ে শিশুবান্ধব পরিবেশ সৃষ্টিতে নেতৃত্ব",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T03/1_48.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T03/2_49.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T03/3_50.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T03/4_51.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C03_T04",
+          "name": "বিদ্যালয় গ্রন্থাগার ব্যবস্থাপনা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/1_105.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/2_106.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/3_107.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/4_108.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/5_109.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/6_110.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/7_111.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/8_112.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/9_113.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/10_114.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/11_115.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/12_116.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/13_117.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/14_118.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/15_119.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T04/16_120.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C03_T05",
+          "name": "বিদ্যালয় গ্রন্থাগারের সম্পূরক পঠন সামগ্রীর ব্যবহার",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T05/1_121.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T05/2_122.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T05/3_123.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T05/4_124.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C03_T06",
+          "name": "পড়ার অভ্যাস গঠনে বিদ্যালয়ের আওতায় গৃহীত কার্যক্রম",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/1_125.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/2_126.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/3_127.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/4_128.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/5_129.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/6_130.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/7_131.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/8_132.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/9_133.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/10_134.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C03/M01_C03_T06/11_135.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M01_C04",
+      "name": "পেশাগত উন্নয়ন ও অ্যাকশন রিসার্চ",
+      "displayOrder": 4,
+      "topics": [
+        {
+          "id": "M01_C04_T01",
+          "name": "প্রতিফলনমূলক শিখন ও আত্মউন্নয়ন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T01/1_141.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T01/2_142.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T01/3_143.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T02",
+          "name": "প্রতিফলিত শিক্ষক হওয়ার কৌশল রিফ্লেক্টিভ জার্নাল",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T02/1_144.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T02/2_145.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T02/3_146.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T03",
+          "name": "প্রতিফলিত শিক্ষক হওয়ার কৌশল সতীর্থ পর্যবেক্ষণ, শ্রেণিকার্যক্রম পর্যবেক্ষণ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T03/1_147.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T03/2_148.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T04",
+          "name": "প্রতিফলনমূলক শিখনের কৌশল লেসন স্টাডি",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T04/1_149.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T04/2_150.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T04/3_151.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T04/4_152.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T04/5_153.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T05",
+          "name": "প্রতিফলনমূলক শিখনের কৌশল কেস স্টাডি",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T05/1_154.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T05/2_155.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T05/3_156.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T05/4_157.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T05/5_158.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T06",
+          "name": "পেশাগত উন্নয়নে অ্যাকশন রিসার্চ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/1_159.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/2_160.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/3_161.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/4_162.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/5_163.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T06/6_164.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T07",
+          "name": "অ্যাকশন রিসার্চ অনুশীলন, টুলস প্রণয়ন তথ্য সংগ্রহ ও বিশ্লেষণ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/1_165.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/2_166.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/3_167.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/4_168.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/5_169.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/6_170.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/7_171.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T07/8_172.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T08",
+          "name": "অ্যাকশন রিসার্চের প্রতিবেদন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 8,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/1_173.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/2_174.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/3_175.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/4_176.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/5_177.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/6_178.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/7_179.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/8_180.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T08/9_181.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M01_C04_T09",
+          "name": "মেন্টরিং",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 9,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T09/1_182.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T09/2_183.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T09/3_184.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T09/4_185.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M01/M01_C04/M01_C04_T09/5_186.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    }
+  ]
+}

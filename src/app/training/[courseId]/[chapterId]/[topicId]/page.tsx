@@ -6,10 +6,11 @@ import { getCurrentUser, type SessionUser } from "@/lib/auth";
 import { InteractiveQuiz } from "@/components";
 import AIThinking from "@/components/AIThinking";
 import {
-  PROFESSIONALISM_TRAINING,
+  TRAINING_COURSES,
   isTopicCompleted,
   isTopicUnlocked,
   completeTrainingTopic,
+  type TrainingCourse,
   type TrainingChapter,
   type TrainingTopic,
 } from "@/lib/data";
@@ -201,12 +202,16 @@ export default function TopicLearningPage() {
 
   const [user, setUser] = useState<SessionUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [course, setCourse] = useState<TrainingCourse | null>(null);
   const [chapter, setChapter] = useState<TrainingChapter | null>(null);
   const [topic, setTopic] = useState<TrainingTopic | null>(null);
 
   // Learning flow state
   const [phase, setPhase] = useState<LearningPhase>("materials");
   const [activeTab, setActiveTab] = useState<MaterialTab>("book");
+
+  // Image viewer state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Quiz state
   const [quiz, setQuiz] = useState<QuizQuestion[]>([]);
@@ -227,14 +232,16 @@ export default function TopicLearningPage() {
     }
     setUser(currentUser);
 
-    // Verify this is the professionalism training course
-    if (courseId !== PROFESSIONALISM_TRAINING.id) {
+    // Find the course by ID
+    const foundCourse = TRAINING_COURSES.find(c => c.id === courseId);
+    if (!foundCourse) {
       router.push("/training");
       return;
     }
+    setCourse(foundCourse);
 
     // Find chapter and topic
-    const foundChapter = PROFESSIONALISM_TRAINING.chapters.find(ch => ch.id === chapterId);
+    const foundChapter = foundCourse.chapters.find(ch => ch.id === chapterId);
     if (!foundChapter) {
       router.push("/training");
       return;
@@ -254,7 +261,7 @@ export default function TopicLearningPage() {
       return;
     }
 
-    // Generate quiz for this topic using API
+    // Generate quiz for this topic using API with training images
     const fetchQuiz = async () => {
       setIsQuizLoading(true);
       try {
@@ -265,13 +272,18 @@ export default function TopicLearningPage() {
             topicId,
             topicName: foundTopic.name,
             chapterName: foundChapter.name,
-            pdfUrl: foundTopic.pdfUrl || "https://file-dhaka.portal.gov.bd/media/821fdb21-cb1d-4563-a678-ebd38ef5e6b9/uploaded-files/1.1_Resource_Professionalism%20and%20Commitment_9.pdf",
+            courseName: foundCourse.name,
+            isTrainingQuiz: true,
+            trainingImages: foundTopic.images || [], // Send local image paths for AI extraction
+            questionCount: 5,
           }),
         });
 
         const data = await response.json();
         if (data.success && data.questions) {
           setQuiz(data.questions);
+        } else {
+          console.error("Quiz generation failed:", data.error);
         }
       } catch (error) {
         console.error("Failed to generate quiz:", error);
@@ -363,7 +375,7 @@ export default function TopicLearningPage() {
     }
   };
 
-  if (isLoading || !chapter || !topic || !user) {
+  if (isLoading || !course || !chapter || !topic || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
         <div className="text-center">
@@ -390,7 +402,7 @@ export default function TopicLearningPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
               <button onClick={() => router.push(`/training/${courseId}`)} className="hover:text-purple-600 transition-colors">
-                {PROFESSIONALISM_TRAINING.name}
+                {course.name}
               </button>
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -477,23 +489,116 @@ export default function TopicLearningPage() {
 
         {/* Content Area */}
         <main className="max-w-4xl mx-auto px-4 py-4">
-          {/* Book Tab - PDF Viewer */}
+          {/* Book Tab - Image Gallery Viewer */}
           {activeTab === "book" && (
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              {/* PDF Viewer Header */}
+              {/* Header */}
               <div className="bg-gradient-to-r from-purple-600 to-indigo-600 px-4 py-3">
-                <h2 className="text-base font-bold text-white mb-0.5">শিক্ষক সহায়িকা বই</h2>
-                <p className="text-white/90 text-xs">{topic.name}</p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h2 className="text-base font-bold text-white mb-0.5">শিক্ষক সহায়িকা</h2>
+                    <p className="text-white/90 text-xs">{topic.name}</p>
+                  </div>
+                  {topic.images && topic.images.length > 0 && (
+                    <div className="bg-white/20 px-3 py-1 rounded-full">
+                      <span className="text-white text-xs font-semibold">
+                        পৃষ্ঠা {currentImageIndex + 1} / {topic.images.length}
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
 
-              {/* PDF Viewer */}
-              <div className="relative">
-                <iframe
-                  src={`${topic.pdfUrl || "https://file-dhaka.portal.gov.bd/media/821fdb21-cb1d-4563-a678-ebd38ef5e6b9/uploaded-files/1.1_Resource_Professionalism%20and%20Commitment_9.pdf"}#page=${topic.pdfStartPage || 1}&toolbar=1&navpanes=1&scrollbar=1`}
-                  className="w-full h-[600px] border-0"
-                  title="শিক্ষক সহায়িকা বই"
-                />
-              </div>
+              {/* Image Viewer */}
+              {topic.images && topic.images.length > 0 ? (
+                <div className="relative">
+                  {/* Main Image */}
+                  <div className="relative bg-gray-100 flex items-center justify-center min-h-[500px]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`/${topic.images[currentImageIndex]}`}
+                      alt={`পৃষ্ঠা ${currentImageIndex + 1}`}
+                      className="max-w-full max-h-[600px] object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = '/placeholder-page.png';
+                      }}
+                    />
+
+                    {/* Navigation Arrows */}
+                    {currentImageIndex > 0 && (
+                      <button
+                        onClick={() => setCurrentImageIndex(prev => prev - 1)}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all"
+                        aria-label="আগের পৃষ্ঠা"
+                      >
+                        <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                    )}
+                    {currentImageIndex < topic.images.length - 1 && (
+                      <button
+                        onClick={() => setCurrentImageIndex(prev => prev + 1)}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all"
+                        aria-label="পরের পৃষ্ঠা"
+                      >
+                        <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Thumbnail Navigation */}
+                  <div className="p-3 bg-gray-50 border-t">
+                    <div className="flex gap-2 overflow-x-auto pb-2">
+                      {topic.images.map((img, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setCurrentImageIndex(idx)}
+                          className={`flex-shrink-0 w-16 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                            idx === currentImageIndex
+                              ? 'border-purple-600 shadow-lg'
+                              : 'border-gray-200 hover:border-purple-300'
+                          }`}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={`/${img}`}
+                            alt={`পৃষ্ঠা ${idx + 1}`}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = '/placeholder-page.png';
+                            }}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : topic.pdfUrl ? (
+                /* Fallback to PDF if no images but has PDF URL */
+                <div className="relative">
+                  <iframe
+                    src={`${topic.pdfUrl}#page=${topic.pdfStartPage || 1}&toolbar=1&navpanes=1&scrollbar=1`}
+                    className="w-full h-[600px] border-0"
+                    title="শিক্ষক সহায়িকা বই"
+                  />
+                </div>
+              ) : (
+                /* No content available */
+                <div className="p-8 text-center text-gray-500">
+                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold mb-1">কনটেন্ট শীঘ্রই আসছে</p>
+                  <p className="text-xs text-gray-400">এই টপিকের শিক্ষক সহায়িকা প্রস্তুত করা হচ্ছে</p>
+                </div>
+              )}
             </div>
           )}
 
@@ -697,36 +802,51 @@ export default function TopicLearningPage() {
                 <p className="text-white/90 text-xs">{topic.name}</p>
               </div>
 
-              {/* YouTube Video */}
-              <div className="relative aspect-video bg-gray-900">
-                <iframe
-                  src="https://www.youtube.com/embed/XRiKMbUckwo"
-                  className="w-full h-full border-0"
-                  title="ভিডিও শিক্ষা"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              {topic.videoUrl || topic.video?.url ? (
+                <>
+                  {/* YouTube Video */}
+                  <div className="relative aspect-video bg-gray-900">
+                    <iframe
+                      src={topic.videoUrl || topic.video?.url || "https://www.youtube.com/embed/XRiKMbUckwo"}
+                      className="w-full h-full border-0"
+                      title="ভিডিও শিক্ষা"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
 
-              {/* Video Info */}
-              <div className="p-4 bg-gradient-to-br from-purple-50 to-indigo-50">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  {/* Video Info */}
+                  <div className="p-4 bg-gradient-to-br from-purple-50 to-indigo-50">
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-sm font-bold text-gray-800 mb-1">
+                          শিক্ষণীয় ভিডিও
+                        </h3>
+                        <p className="text-xs text-gray-600 leading-relaxed">
+                          এই ভিডিওটি দেখে টপিক সম্পর্কে আরও ভালোভাবে বুঝুন। প্রয়োজনে একাধিকবার দেখতে পারেন।
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                /* No video available */
+                <div className="p-8 text-center text-gray-500">
+                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-bold text-gray-800 mb-1">
-                      শিক্ষণীয় ভিডিও
-                    </h3>
-                    <p className="text-xs text-gray-600 leading-relaxed">
-                      এই ভিডিওটি দেখে টপিক সম্পর্কে আরও ভালোভাবে বুঝুন। প্রয়োজনে একাধিকবার দেখতে পারেন।
-                    </p>
-                  </div>
+                  <p className="text-sm font-semibold mb-1">ভিডিও শীঘ্রই আসছে</p>
+                  <p className="text-xs text-gray-400">এই টপিকের ভিডিও প্রস্তুত করা হচ্ছে</p>
                 </div>
-              </div>
+              )}
             </div>
           )}
 
@@ -835,7 +955,7 @@ export default function TopicLearningPage() {
 
             <div className="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-4 mb-4">
               <h2 className="text-base font-bold text-gray-800 mb-2">{topic.name}</h2>
-              <p className="text-xs text-gray-600">{PROFESSIONALISM_TRAINING.name} • {chapter.name}</p>
+              <p className="text-xs text-gray-600">{course.name} • {chapter.name}</p>
               <div className="mt-3 inline-flex items-center gap-2 px-4 py-1.5 bg-green-500 text-white rounded-full font-bold text-xs">
                 ৫টি প্রশ্নের উত্তর সম্পন্ন
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

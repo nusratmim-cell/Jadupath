@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { getCurrentUser, type SessionUser } from "@/lib/auth";
 import {
-  PROFESSIONALISM_TRAINING,
+  TRAINING_COURSES,
   isTopicUnlocked,
   isTopicCompleted,
   toBengaliNumber,
+  type TrainingCourse,
   type TrainingChapter,
   type TrainingTopic,
 } from "@/lib/data";
@@ -19,6 +20,7 @@ export default function ChapterDetailPage() {
   const chapterId = params.chapterId as string;
 
   const [user, setUser] = useState<SessionUser | null>(null);
+  const [course, setCourse] = useState<TrainingCourse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [chapter, setChapter] = useState<TrainingChapter | null>(null);
 
@@ -30,14 +32,16 @@ export default function ChapterDetailPage() {
     }
     setUser(currentUser);
 
-    // Verify this is the professionalism training course
-    if (courseId !== PROFESSIONALISM_TRAINING.id) {
+    // Find the course by ID
+    const foundCourse = TRAINING_COURSES.find(c => c.id === courseId);
+    if (!foundCourse) {
       router.push("/training");
       return;
     }
+    setCourse(foundCourse);
 
     // Find chapter
-    const foundChapter = PROFESSIONALISM_TRAINING.chapters.find(ch => ch.id === chapterId);
+    const foundChapter = foundCourse.chapters.find(ch => ch.id === chapterId);
     if (!foundChapter) {
       router.push(`/training/${courseId}`);
       return;
@@ -47,7 +51,7 @@ export default function ChapterDetailPage() {
     setIsLoading(false);
   }, [router, courseId, chapterId]);
 
-  if (isLoading || !chapter || !user) {
+  if (isLoading || !course || !chapter || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
         <div className="text-center">
@@ -90,7 +94,7 @@ export default function ChapterDetailPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
                 <button onClick={() => router.push(`/training/${courseId}`)} className="hover:text-purple-600 transition-colors">
-                  {PROFESSIONALISM_TRAINING.name}
+                  {course.name}
                 </button>
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -1,0 +1,501 @@
+{
+  "id": "m04-curriculum",
+  "name": "শিক্ষাক্রম, শিখন-শেখানো কৌশল ও মূল্যায়ন",
+  "description": "শিক্ষাক্রম, শিখন-শেখানো কৌশল ও মূল্যায়ন প্রশিক্ষণ মডিউল",
+  "icon": "📖",
+  "color": "from-orange-500 to-red-600",
+  "chapters": [
+    {
+      "id": "M04_C01",
+      "name": "অধ্যায় ১ শিখনক্ষেত্র ও শিক্ষাক্রমের তাত্ত্বিক ভিত্তি",
+      "displayOrder": 1,
+      "topics": [
+        {
+          "id": "M04_C01_T01",
+          "name": "শিখন এবং শিখনক্ষেত্রের গুরুত্ব",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T01/1_11.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T01/2_12.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T01/3_13.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T02",
+          "name": "বুদ্ধিবৃত্তিক শিখনক্ষেত্রের উপক্ষেত্রসমূহ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T02/1_14.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T02/2_15.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T02/3_16.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T03",
+          "name": "আবেগীয় শিখনক্ষেত্রের উপক্ষেত্রসমূহ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T03/1_17.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T03/2_18.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T03/3_19.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T04",
+          "name": "মনোপেশিজ শিখনক্ষেত্রের উপক্ষেত্রসমূহ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T04/1_20.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T04/2_21.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T05",
+          "name": "শিক্ষাক্রমের ধারণা ও উপাদানসমূহ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T05/1_22.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T05/2_23.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T06",
+          "name": "শিক্ষাক্রমের বৈশিষ্ট্য এবং শিক্ষাক্রম ও পাঠ্যসূচিসিলেবাসের পার্থক্য",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T06/1_24.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T06/2_25.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T06/3_26.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C01_T07",
+          "name": "বিভিন্ন ধরনের শিক্ষাক্রম",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T07/1_27.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C01/M04_C01_T07/2_28.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M04_C02",
+      "name": "অধ্যায় ২ জাতীয় শিক্ষাক্রম ২০২১ (প্রাথমিক) কাঠামো ও বাস্তবায়ন",
+      "displayOrder": 2,
+      "topics": [
+        {
+          "id": "M04_C02_T01",
+          "name": "জাতীয় শিক্ষাক্রম ২০২১- প্রাথমিক স্তর (পরিমার্জিত ২০২৫) এর রূপকল্প, অভিলক্ষ্য ও যোগ্যতা",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T01/1_29.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T01/2_30.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T01/3_31.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C02_T02",
+          "name": "জাতীয় শিক্ষাক্রম ২০২১- প্রাথমিক স্তর (পরিমার্জিত ২০২৫)-এর মূলনীতি ও মূল যোগ্যতা",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T02/1_32.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T02/2_33.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C02_T03",
+          "name": "জাতীয় শিক্ষাক্রম ২০২১- প্রাথমিক স্তর (পরিমার্জিত ২০২৫) শিখনক্ষেত্র",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/1_34.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/2_35.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/3_36.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/4_37.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/5_38.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T03/6_39.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C02_T04",
+          "name": "বিষয়ভিত্তিক ও শ্রেণিভিত্তিক অর্জন উপযোগী যোগ্যতা শনাক্তকরণ এবং পাঠ্যপুস্তকে শিখনফলের প্রতিফলন চিহ্নিতকরণ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T04/1_40.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T04/2_41.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C02_T05",
+          "name": "জাতীয় শিক্ষাক্রম ২০২১- প্রাথমিক স্তর (পরিমার্জিত ২০২৫)-এর শিখন-শেখানো সামগ্রী",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T05/1_42.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C02/M04_C02_T05/2_43.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M04_C03",
+      "name": "অধ্যায় ৩ শ্রেণিকক্ষ ব্যবস্থাপনা ও শিখন-শেখানো কৌশল",
+      "displayOrder": 3,
+      "topics": [
+        {
+          "id": "M04_C03_T01",
+          "name": "কার্যকর শ্রেণিকক্ষ ব্যবস্থাপনা ও বাস্তবায়ন কৌশল",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/1_44.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/2_45.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/3_46.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/4_47.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/5_48.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/6_49.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T01/7_50.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T02",
+          "name": "শিখন শেখানো পদ্ধতি (১) বক্তৃতা, আলোচনা ও প্রদর্শন",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T02/1_51.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T02/2_52.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T02/3_53.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T03",
+          "name": "শিখন-শেখানো পদ্ধতি (২) খেলা ভিত্তিক শিখন, ভূমিকাভিনয় ও সমস্যা সমাধান",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T03/1_54.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T03/2_55.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T03/3_56.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T04",
+          "name": "শিখন-শেখানো কৌশল প্রথম অংশ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T04/1_57.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T04/2_58.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T04/3_59.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T05",
+          "name": "শিখন-শেখানো কৌশল দ্বিতীয় অংশ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T05/1_60.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T05/2_61.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T05/3_62.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T06",
+          "name": "একীভূত শিক্ষার ধারণা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/1_63.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/2_64.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/3_65.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/4_66.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/5_67.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/6_68.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/7_69.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/8_70.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T06/9_71.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T07",
+          "name": "একীভূত শিখন-শেখানো কার্যক্রম অনুশীলন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T07/1_72.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T08",
+          "name": "অভিজ্ঞতাভিত্তিক শিখনের ধারণা",
+          "duration": "২০ মিনিট",
+          "displayOrder": 8,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T08/1_73.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T08/2_74.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T09",
+          "name": "প্রকল্পপ্রজেক্টভিত্তিক শিখনের ধারণা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 9,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/1_75.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/2_76.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/3_77.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/4_78.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/5_79.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/6_80.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/7_81.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T09/8_82.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T10",
+          "name": "প্রকল্পপ্রজেক্টভিত্তিক শিখন পদ্ধতি অনুশীলন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 10,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T10/1_83.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T11",
+          "name": "শিক্ষা উপকরণ ধারণা, তৈরি, সংগ্রহ, ব্যবহার ও সংরক্ষণ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 11,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/1_84.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/2_85.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/3_86.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/4_87.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/5_88.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T11/6_89.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C03_T12",
+          "name": "মাল্টিসেন্সরি উপকরণ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 12,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T12/1_90.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T12/2_91.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T12/3_92.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C03/M04_C03_T12/4_93.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    },
+    {
+      "id": "M04_C04",
+      "name": "অধ্যায় ৪ মূল্যায়ন প্রক্রিয়া ও অভীক্ষা প্রণয়ন",
+      "displayOrder": 4,
+      "topics": [
+        {
+          "id": "M04_C04_T01",
+          "name": "প্রাথমিক শিক্ষাক্রম মূল্যায়নের ধারণা ও ধরন",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 1,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T01/1_94.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T01/2_95.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T02",
+          "name": "ধারাবাহিক মূল্যায়ন প্রক্রিয়া",
+          "duration": "২০ মিনিট",
+          "displayOrder": 2,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T02/1_96.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T02/2_97.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T02/3_98.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T03",
+          "name": "ফলাবর্তন প্রক্রিয়া",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 3,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T03/1_99.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T03/2_100.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T03/3_101.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T04",
+          "name": "সামষ্টিক মূল্যায়ন এবং ধারাবাহিক ও সামষ্টিক মূল্যায়নের পার্থক্য",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 4,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T04/1_102.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T04/2_103.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T05",
+          "name": "অভীক্ষার ধারণা ও অভীক্ষা গঠনের মূলনীতিসমূহ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 5,
+          "images": [],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T06",
+          "name": "বিভিন্ন ধরনের অভীক্ষা",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 6,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T06/1_102.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T06/2_103.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T06/3_104.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T06/4_105.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T06/5_106.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T07",
+          "name": "বহুনির্বাচনী অভীক্ষার বৈশিষ্ট্য এবং প্রণয়নের নিয়মাবলি",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 7,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T07/1_107.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T07/2_108.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T07/3_109.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T07/4_110.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T07/5_111.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T08",
+          "name": "অভীক্ষাপদ গঠন জ্ঞানমূলক এবং অনুধাবনমূলক প্রশ্ন বা অভীক্ষাপদ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 8,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T08/1_112.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T08/2_113.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T08/3_114.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T08/4_115.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T08/5_116.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T09",
+          "name": "অভীক্ষাপদ গঠন প্রয়োগমূলক এবং উচ্চতর দক্ষতার প্রশ্ন বা অভীক্ষাপদ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 9,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T09/1_117.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T09/2_118.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T09/3_119.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T09/4_120.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T09/5_121.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T10",
+          "name": "অভীক্ষাপত্র পরিশোধন ও যথার্থতা নিশ্চিতকরণ",
+          "duration": "১৫ মিনিট",
+          "displayOrder": 10,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/1_122.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/2_123.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/3_124.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/4_125.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/5_126.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/6_127.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T10/7_128.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T11",
+          "name": "সত্য-মিথ্যা এবং মিলকরণ অভীক্ষাপদ",
+          "duration": "২০ মিনিট",
+          "displayOrder": 11,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/1_129.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/2_130.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/3_131.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/4_132.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/5_133.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/6_134.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T11/7_135.jpg"
+          ],
+          "videoUrl": null
+        },
+        {
+          "id": "M04_C04_T12",
+          "name": "কাঠামোবদ্ধ অভীক্ষাপদ",
+          "duration": "২৫ মিনিট",
+          "displayOrder": 12,
+          "images": [
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/1_136.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/2_137.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/3_138.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/4_139.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/5_140.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/6_141.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/7_142.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/8_143.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/9_144.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/10_145.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/11_146.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/12_147.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/13_148.jpg",
+            "content/training/topic_segmented_output/topic_segmented_output/M04/M04_C04/M04_C04_T12/14_149.jpg"
+          ],
+          "videoUrl": null
+        }
+      ]
+    }
+  ]
+}

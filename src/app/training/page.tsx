@@ -8,7 +8,7 @@ import {
   type SessionUser,
 } from "@/lib/auth";
 import {
-  PROFESSIONALISM_TRAINING,
+  TRAINING_COURSES,
   getCourseCompletionStats,
   getNextTopicToLearn,
   toBengaliNumber,
@@ -42,8 +42,16 @@ export default function TrainingPage() {
   }
 
   const nextTopic = getNextTopicToLearn(user.id);
-  const courseStats = getCourseCompletionStats(user.id, PROFESSIONALISM_TRAINING.id);
-  const progressPercentage = courseStats.percentage;
+
+  // Calculate overall stats across all courses
+  const allCourseStats = TRAINING_COURSES.map(course => ({
+    course,
+    stats: getCourseCompletionStats(user.id, course.id)
+  }));
+
+  const totalTopics = allCourseStats.reduce((sum, c) => sum + c.stats.totalTopics, 0);
+  const completedTopics = allCourseStats.reduce((sum, c) => sum + c.stats.completedTopics, 0);
+  const progressPercentage = totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 pb-24">
@@ -101,15 +109,15 @@ export default function TrainingPage() {
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-2">
             <div className="bg-white/10 rounded-lg p-2.5 text-center">
-              <p className="text-xl font-bold">{toBengaliNumber(PROFESSIONALISM_TRAINING.chapters.length)}</p>
-              <p className="text-xs text-white/70">সেশন</p>
+              <p className="text-xl font-bold">{toBengaliNumber(TRAINING_COURSES.length)}</p>
+              <p className="text-xs text-white/70">মডিউল</p>
             </div>
             <div className="bg-white/10 rounded-lg p-2.5 text-center">
-              <p className="text-xl font-bold">{toBengaliNumber(courseStats.totalTopics)}</p>
+              <p className="text-xl font-bold">{toBengaliNumber(totalTopics)}</p>
               <p className="text-xs text-white/70">টপিক</p>
             </div>
             <div className="bg-white/10 rounded-lg p-2.5 text-center">
-              <p className="text-xl font-bold">{toBengaliNumber(courseStats.completedTopics)}</p>
+              <p className="text-xl font-bold">{toBengaliNumber(completedTopics)}</p>
               <p className="text-xs text-white/70">সম্পন্ন</p>
             </div>
           </div>
@@ -130,7 +138,7 @@ export default function TrainingPage() {
                   {nextTopic.topic.name}
                 </p>
                 <button
-                  onClick={() => router.push(`/training/${PROFESSIONALISM_TRAINING.id}/${nextTopic.chapter.id}/${nextTopic.topic.id}`)}
+                  onClick={() => router.push(`/training/${nextTopic.course.id}/${nextTopic.chapter.id}/${nextTopic.topic.id}`)}
                   className="px-3 py-1.5 bg-amber-500 text-white text-xs font-medium rounded-lg hover:bg-amber-600 transition-colors inline-flex items-center gap-1"
                 >
                   এখনই শুরু করুন
@@ -143,43 +151,46 @@ export default function TrainingPage() {
           </div>
         )}
 
-        {/* Subject Selection */}
+        {/* Module Selection */}
         <div>
-          <h2 className="text-base font-bold text-slate-800 mb-3">প্রশিক্ষণ বিষয় নির্বাচন করুন</h2>
-          <button
-            onClick={() => router.push(`/training/${PROFESSIONALISM_TRAINING.id}`)}
-            className="w-full bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all text-left group"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 bg-gradient-to-br from-[#cf278d] to-[#cf278d] rounded-lg flex items-center justify-center text-white font-bold shadow-md">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <div className="flex-1">
-                <h3 className="font-bold text-slate-800 text-base group-hover:text-[#cf278d] transition-colors">
-                  {PROFESSIONALISM_TRAINING.name}
-                </h3>
-                <p className="text-slate-500 text-xs">
-                  {toBengaliNumber(courseStats.completedTopics)}/{toBengaliNumber(courseStats.totalTopics)} টপিক সম্পন্ন
-                </p>
-              </div>
-              <svg className="w-5 h-5 text-slate-400 group-hover:text-[#cf278d] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
+          <h2 className="text-base font-bold text-slate-800 mb-3">প্রশিক্ষণ মডিউল নির্বাচন করুন</h2>
+          <div className="space-y-3">
+            {allCourseStats.map(({ course, stats }) => (
+              <button
+                key={course.id}
+                onClick={() => router.push(`/training/${course.id}`)}
+                className="w-full bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all text-left group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`w-11 h-11 bg-gradient-to-br ${course.color} rounded-lg flex items-center justify-center text-white text-xl shadow-md`}>
+                    {course.icon}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-bold text-slate-800 text-sm group-hover:text-[#cf278d] transition-colors truncate">
+                      {course.name}
+                    </h3>
+                    <p className="text-slate-500 text-xs">
+                      {toBengaliNumber(stats.completedTopics)}/{toBengaliNumber(stats.totalTopics)} টপিক সম্পন্ন
+                    </p>
+                  </div>
+                  <svg className="w-5 h-5 text-slate-400 group-hover:text-[#cf278d] transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
 
-            {/* Progress Bar */}
-            <div className="mt-3">
-              <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full transition-all"
-                  style={{ width: `${progressPercentage}%` }}
-                />
-              </div>
-              <p className="text-right text-xs text-slate-400 mt-1">{toBengaliNumber(progressPercentage)}%</p>
-            </div>
-          </button>
+                {/* Progress Bar */}
+                <div className="mt-3">
+                  <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-green-400 to-green-500 rounded-full transition-all"
+                      style={{ width: `${stats.percentage}%` }}
+                    />
+                  </div>
+                  <p className="text-right text-xs text-slate-400 mt-1">{toBengaliNumber(stats.percentage)}%</p>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Info Card */}

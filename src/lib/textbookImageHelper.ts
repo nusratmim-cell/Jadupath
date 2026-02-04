@@ -97,3 +97,58 @@ export async function getImagePartsForGemini(imageUrls: string[]): Promise<any[]
 
   return parts;
 }
+
+/**
+ * Fetch local training image as base64 for Gemini Vision API
+ * Training images are stored locally in the content folder
+ */
+export async function fetchLocalImageAsBase64(imagePath: string): Promise<string | null> {
+  try {
+    const fs = await import('fs/promises');
+    const path = await import('path');
+
+    // Build absolute path from project root
+    const absolutePath = path.join(process.cwd(), imagePath);
+
+    // Check if file exists
+    try {
+      await fs.access(absolutePath);
+    } catch {
+      console.error('Training image not found:', absolutePath);
+      return null;
+    }
+
+    const buffer = await fs.readFile(absolutePath);
+    const base64 = buffer.toString('base64');
+    return base64;
+  } catch (error) {
+    console.error('Error reading local image:', error);
+    return null;
+  }
+}
+
+/**
+ * Get inline data parts for training images (local files)
+ */
+export async function getTrainingImagePartsForGemini(imagePaths: string[]): Promise<any[]> {
+  const parts = [];
+
+  // Limit to first 8 pages to avoid token limits but get enough content
+  const limitedPaths = imagePaths.slice(0, 8);
+
+  for (const imagePath of limitedPaths) {
+    const base64Data = await fetchLocalImageAsBase64(imagePath);
+
+    if (base64Data) {
+      const mimeType = imagePath.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
+      parts.push({
+        inlineData: {
+          data: base64Data,
+          mimeType,
+        },
+      });
+    }
+  }
+
+  return parts;
+}
