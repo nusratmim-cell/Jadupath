@@ -16,8 +16,8 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 1,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T01/1_9.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T01/2_10.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T01/1_9.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T01/2_10.jpg"
           ],
           "videoUrl": null
         },
@@ -27,10 +27,10 @@
           "duration": "২০ মিনিট",
           "displayOrder": 2,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/1_11.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/2_12.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/3_13.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T02/4_14.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T02/1_11.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T02/2_12.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T02/3_13.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T02/4_14.jpg"
           ],
           "videoUrl": null
         },
@@ -40,12 +40,12 @@
           "duration": "২৫ মিনিট",
           "displayOrder": 3,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/1_15.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/2_16.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/3_17.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/4_18.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/5_19.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T03/6_20.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/1_15.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/2_16.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/3_17.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/4_18.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/5_19.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T03/6_20.jpg"
           ],
           "videoUrl": null
         },
@@ -55,13 +55,13 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 4,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/1_21.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/2_22.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/3_23.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/4_24.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/5_25.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/6_26.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T04/7_27.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/1_21.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/2_22.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/3_23.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/4_24.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/5_25.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/6_26.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T04/7_27.jpg"
           ],
           "videoUrl": null
         },
@@ -71,10 +71,10 @@
           "duration": "২০ মিনিট",
           "displayOrder": 5,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/1_28.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/2_29.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/3_30.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T05/4_31.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T05/1_28.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T05/2_29.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T05/3_30.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T05/4_31.jpg"
           ],
           "videoUrl": null
         },
@@ -84,13 +84,13 @@
           "duration": "২৫ মিনিট",
           "displayOrder": 6,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/1_32.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/2_33.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/3_34.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/4_35.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/5_36.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/6_37.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C01/M02_C01_T06/7_38.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/1_32.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/2_33.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/3_34.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/4_35.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/5_36.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/6_37.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C01/M02_C01_T06/7_38.jpg"
           ],
           "videoUrl": null
         }
@@ -107,7 +107,7 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 1,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T01/1_39.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T01/1_39.jpg"
           ],
           "videoUrl": null
         },
@@ -117,9 +117,9 @@
           "duration": "২০ মিনিট",
           "displayOrder": 2,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/1_40.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/2_41.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T02/3_42.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T02/1_40.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T02/2_41.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T02/3_42.jpg"
           ],
           "videoUrl": null
         },
@@ -129,11 +129,11 @@
           "duration": "২৫ মিনিট",
           "displayOrder": 3,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/1_43.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/2_44.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/3_45.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/4_46.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T03/5_47.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T03/1_43.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T03/2_44.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T03/3_45.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T03/4_46.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T03/5_47.jpg"
           ],
           "videoUrl": null
         },
@@ -143,12 +143,12 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 4,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/1_48.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/2_49.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/3_50.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/4_51.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/5_52.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C02/M02_C02_T04/6_53.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/1_48.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/2_49.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/3_50.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/4_51.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/5_52.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C02/M02_C02_T04/6_53.jpg"
           ],
           "videoUrl": null
         }
@@ -165,11 +165,11 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 1,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/1_54.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/2_55.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/3_56.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/4_57.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T01/5_58.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T01/1_54.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T01/2_55.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T01/3_56.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T01/4_57.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T01/5_58.jpg"
           ],
           "videoUrl": null
         },
@@ -179,16 +179,16 @@
           "duration": "২০ মিনিট",
           "displayOrder": 2,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/1_59.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/2_60.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/3_61.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/4_62.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/5_63.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/6_64.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/7_65.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/8_66.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/9_67.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T02/10_68.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/1_59.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/2_60.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/3_61.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/4_62.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/5_63.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/6_64.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/7_65.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/8_66.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/9_67.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T02/10_68.jpg"
           ],
           "videoUrl": null
         },
@@ -198,11 +198,11 @@
           "duration": "২৫ মিনিট",
           "displayOrder": 3,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/1_69.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/2_70.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/3_71.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/4_72.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T03/5_73.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T03/1_69.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T03/2_70.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T03/3_71.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T03/4_72.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T03/5_73.jpg"
           ],
           "videoUrl": null
         },
@@ -212,17 +212,17 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 4,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/1_73.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/2_74.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/3_75.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/4_76.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/5_77.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/6_78.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/7_79.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/8_80.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/9_81.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/10_82.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T04/11_83.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/1_73.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/2_74.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/3_75.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/4_76.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/5_77.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/6_78.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/7_79.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/8_80.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/9_81.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/10_82.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T04/11_83.jpg"
           ],
           "videoUrl": null
         },
@@ -232,8 +232,8 @@
           "duration": "২০ মিনিট",
           "displayOrder": 5,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T05/1_84.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C03/M02_C03_T05/2_85.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T05/1_84.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C03/M02_C03_T05/2_85.jpg"
           ],
           "videoUrl": null
         }
@@ -250,10 +250,10 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 1,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/1_86.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/2_87.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/3_88.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T01/4_89.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T01/1_86.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T01/2_87.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T01/3_88.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T01/4_89.jpg"
           ],
           "videoUrl": null
         },
@@ -263,14 +263,14 @@
           "duration": "২০ মিনিট",
           "displayOrder": 2,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/1_90.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/2_91.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/3_92.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/4_93.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/5_94.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/6_95.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/7_96.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T02/8_97.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/1_90.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/2_91.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/3_92.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/4_93.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/5_94.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/6_95.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/7_96.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T02/8_97.jpg"
           ],
           "videoUrl": null
         },
@@ -280,9 +280,9 @@
           "duration": "২৫ মিনিট",
           "displayOrder": 3,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/1_98.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/2_99.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T03/3_100.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T03/1_98.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T03/2_99.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T03/3_100.jpg"
           ],
           "videoUrl": null
         },
@@ -292,17 +292,17 @@
           "duration": "১৫ মিনিট",
           "displayOrder": 4,
           "images": [
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/1_101.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/2_102.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/3_103.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/4_104.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/5_105.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/6_106.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/7_107.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/8_108.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/9_109.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/10_110.jpg",
-            "content/training/topic_segmented_output/topic_segmented_output/M02/M02_C04/M02_C04_T04/11_111.jpg"
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/1_101.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/2_102.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/3_103.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/4_104.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/5_105.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/6_106.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/7_107.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/8_108.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/9_109.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/10_110.jpg",
+            "https://rkcpdwzogxbspsdazxqf.supabase.co/storage/v1/object/public/training-images/M02/M02_C04/M02_C04_T04/11_111.jpg"
           ],
           "videoUrl": null
         }

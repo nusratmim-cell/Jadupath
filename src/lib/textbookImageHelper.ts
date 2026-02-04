@@ -143,23 +143,36 @@ export async function fetchLocalImageAsBase64(imagePath: string): Promise<string
 }
 
 /**
- * Get inline data parts for training images (local files)
- * In production, returns empty array - quiz will generate from topic name only
+ * Check if a path is a URL (http/https)
+ */
+function isUrl(path: string): boolean {
+  return path.startsWith('http://') || path.startsWith('https://');
+}
+
+/**
+ * Get inline data parts for training images
+ * Supports both local files (development) and URLs (production with Supabase)
  */
 export async function getTrainingImagePartsForGemini(imagePaths: string[]): Promise<any[]> {
-  // In production, skip local file reading entirely
-  if (isProduction()) {
-    console.log('Production mode: Skipping local training images, quiz will use topic name only');
-    return [];
-  }
-
   const parts = [];
 
   // Limit to first 8 pages to avoid token limits but get enough content
   const limitedPaths = imagePaths.slice(0, 8);
 
   for (const imagePath of limitedPaths) {
-    const base64Data = await fetchLocalImageAsBase64(imagePath);
+    let base64Data: string | null = null;
+
+    if (isUrl(imagePath)) {
+      // Image is a URL (from Supabase Storage) - fetch it
+      base64Data = await fetchImageAsBase64(imagePath);
+    } else if (!isProduction()) {
+      // Local file path - only works in development
+      base64Data = await fetchLocalImageAsBase64(imagePath);
+    } else {
+      // Production with local path - skip (shouldn't happen after upload)
+      console.log('Skipping local path in production:', imagePath);
+      continue;
+    }
 
     if (base64Data) {
       const mimeType = imagePath.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
