@@ -1,0 +1,7 @@
+# Ignore large training content folder - not needed in serverless functions
+content/training/topic_segmented_output/
+
+# Ignore local development files
+.next/
+node_modules/
+*.log

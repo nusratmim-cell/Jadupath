@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "excludeFiles": "content/**"
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next"
+}

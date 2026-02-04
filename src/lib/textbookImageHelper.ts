@@ -99,11 +99,26 @@ export async function getImagePartsForGemini(imageUrls: string[]): Promise<any[]
 }
 
 /**
+ * Check if running in production (Vercel) where local file access isn't available
+ */
+function isProduction(): boolean {
+  return process.env.VERCEL === '1' || process.env.NODE_ENV === 'production';
+}
+
+/**
  * Fetch local training image as base64 for Gemini Vision API
  * Training images are stored locally in the content folder
+ * Note: This only works in development. In production, images should be served from CDN.
  */
 export async function fetchLocalImageAsBase64(imagePath: string): Promise<string | null> {
+  // Skip local file reading in production (Vercel)
+  if (isProduction()) {
+    console.log('Skipping local file read in production:', imagePath);
+    return null;
+  }
+
   try {
+    // Dynamic import only in development
     const fs = await import('fs/promises');
     const path = await import('path');
 
@@ -129,8 +144,15 @@ export async function fetchLocalImageAsBase64(imagePath: string): Promise<string
 
 /**
  * Get inline data parts for training images (local files)
+ * In production, returns empty array - quiz will generate from topic name only
  */
 export async function getTrainingImagePartsForGemini(imagePaths: string[]): Promise<any[]> {
+  // In production, skip local file reading entirely
+  if (isProduction()) {
+    console.log('Production mode: Skipping local training images, quiz will use topic name only');
+    return [];
+  }
+
   const parts = [];
 
   // Limit to first 8 pages to avoid token limits but get enough content
