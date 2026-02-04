@@ -30,6 +30,7 @@ import { getCachedChapters } from "@/lib/content";
 import { ShikhoHeader, CastButton, Toast, useToast, NoticeBar, QuizConfigModal, type QuizConfig } from "@/components";
 import AIThinking from "@/components/AIThinking";
 import { useChromecast } from "@/hooks/useChromecast";
+import { generateScrollablePDFHTML } from "@/lib/castHelpers";
 
 // Format AI response text - convert markdown to HTML
 function formatAIResponse(text: string): ReactElement {
@@ -188,7 +189,7 @@ export default function TopicContentPage() {
   const [aiMode, setAIMode] = useState<AIMode>("quiz");
 
   // Chromecast integration
-  const { castVideo, castWebsite, isConnected: isCasting, currentDevice } = useChromecast();
+  const { castVideo, castWebsite, castHTML, isConnected: isCasting, currentDevice } = useChromecast();
 
   // Toast notifications
   const { toasts, removeToast, success, info } = useToast();
@@ -276,28 +277,39 @@ export default function TopicContentPage() {
     setIsLoading(false);
   }, [router, classId]);
 
-  // Cast PDF to Chromecast
+  // Cast PDF to Chromecast with scrollable viewer
   const handleCastPDF = useCallback(async () => {
-    if (!topic?.nctbBook?.pdfUrl) {
-      console.error("No PDF URL available");
-      return;
-    }
-
-    const baseUrl = NCTB_PDF_URLS[classId]?.[subjectId];
-    if (!baseUrl) {
-      console.error("No NCTB PDF URL for this class/subject");
+    if (!topic?.pdfStartPage || !topic?.pdfEndPage) {
+      console.error("No PDF page range available");
+      console.error("Topic:", topic);
       return;
     }
 
     try {
-      await castWebsite(baseUrl, topic.name || "পাঠ্যবই");
+      console.log("📚 Casting PDF pages:", topic.pdfStartPage, "to", topic.pdfEndPage);
+
+      // Generate scrollable HTML with ALL pages as images from Supabase
+      const html = generateScrollablePDFHTML(
+        classId,
+        subjectId,
+        chapterId,
+        topic.pdfStartPage,
+        topic.pdfEndPage,
+        topic?.nctbBook?.title || topic.name || "পাঠ্যবই"
+      );
+
+      // Cast the HTML to TV
+      await castHTML(html, topic.name || "পাঠ্যবই");
+
+      console.log("✅ Scrollable PDF cast to TV successfully");
+      console.log("   Teachers can now scroll through all", topic.pdfEndPage - topic.pdfStartPage + 1, "pages on TV");
     } catch (err: any) {
       // Only log actual errors, not cancellations
       if (err?.message !== "কাস্ট সেশন তৈরি করতে ব্যর্থ হয়েছে") {
-        console.log("PDF cast error:", err?.message || "Unknown error");
+        console.error("❌ PDF cast error:", err?.message || "Unknown error");
       }
     }
-  }, [topic, classId, subjectId, castWebsite]);
+  }, [topic, classId, subjectId, chapterId, castHTML]);
 
   // Cast video to Chromecast
   const handleCastVideo = useCallback(async () => {

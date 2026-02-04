@@ -70,33 +70,55 @@ export function CastProvider({ children }: CastProviderProps) {
 
   // Receiver listener
   const receiverListener = useCallback((availability: chrome.cast.ReceiverAvailability) => {
-    console.log("Receiver availability changed:", availability);
+    console.log("=== Receiver Availability Changed ===");
+    console.log("Availability value:", availability);
+    console.log("AVAILABLE constant:", chrome.cast.ReceiverAvailability.AVAILABLE);
+    console.log("UNAVAILABLE constant:", chrome.cast.ReceiverAvailability.UNAVAILABLE);
+    console.log("Match AVAILABLE?:", availability === chrome.cast.ReceiverAvailability.AVAILABLE);
+
     if (availability === chrome.cast.ReceiverAvailability.AVAILABLE) {
-      console.log("Chromecast devices found on network!");
+      console.log("✅ Chromecast devices found on network!");
+      console.log("   The cast button should now be enabled");
       setIsAvailable(true);
+      setError(null); // Clear any previous errors
     } else {
-      console.log("No Chromecast devices found on network");
+      console.log("❌ No Chromecast devices found on network");
+      console.log("   Troubleshooting:");
+      console.log("   1. Is Chromecast powered on?");
+      console.log("   2. Is Chromecast on same WiFi as this device?");
+      console.log("   3. Try restarting Chromecast");
+      console.log("   4. Check router firewall (allow mDNS on port 5353)");
       setIsAvailable(false);
     }
   }, []);
 
   // Initialize Cast SDK
   useEffect(() => {
-    console.log("CastContext: Starting Cast SDK initialization...");
-    console.log("Browser check:", {
-      hasChrome: !!window.chrome,
-      hasCast: !!(window.chrome && window.chrome.cast),
-      isAvailable: !!(window.chrome && window.chrome.cast && window.chrome.cast.isAvailable)
+    console.log("=== Cast SDK Initialization Debug ===");
+    console.log("1. Window.chrome exists:", !!window.chrome);
+    console.log("2. Chrome.cast exists:", !!window.chrome?.cast);
+    console.log("3. Cast.isAvailable:", window.chrome?.cast?.isAvailable);
+
+    // Check if script tag loaded
+    const scriptTag = document.querySelector('script[src*="cast_sender.js"]');
+    console.log("4. Cast script tag found:", !!scriptTag);
+
+    // Check environment
+    console.log("5. Environment:", {
+      isHTTPS: window.location.protocol === 'https:',
+      isLocalhost: window.location.hostname === 'localhost',
+      hostname: window.location.hostname,
+      userAgent: navigator.userAgent.includes('Chrome') || navigator.userAgent.includes('Edge') ? 'Chrome/Edge' : 'Other'
     });
 
     // Wait for Cast SDK to load
     const initializeCastApi = () => {
       if (!window.chrome || !window.chrome.cast || !window.chrome.cast.isAvailable) {
-        console.log("Cast SDK not ready, retrying...");
+        console.warn("⚠️ Cast SDK not ready, will retry when available");
         return;
       }
 
-      console.log("Initializing Cast SDK");
+      console.log("6. Initializing Cast SDK with receiver:", DEFAULT_MEDIA_RECEIVER_APP_ID);
 
       const sessionRequest = new chrome.cast.SessionRequest(DEFAULT_MEDIA_RECEIVER_APP_ID);
 
@@ -111,11 +133,17 @@ export function CastProvider({ children }: CastProviderProps) {
       chrome.cast.initialize(
         apiConfig,
         () => {
-          console.log("Cast SDK initialized successfully");
-          console.log("Waiting for receiver availability...");
+          console.log("✅ Cast SDK initialized successfully!");
+          console.log("7. Waiting for receiver availability callback...");
+          console.log("   Make sure:");
+          console.log("   - Chromecast device is on same WiFi network");
+          console.log("   - Chromecast device is powered on");
+          console.log("   - No firewall blocking mDNS/SSDP discovery");
         },
         (err) => {
-          console.error("Cast SDK initialization failed:", err);
+          console.error("❌ Cast SDK initialization failed:", err);
+          console.error("   Error code:", err?.code);
+          console.error("   Error description:", err?.description);
           setError("কাস্ট SDK শুরু করতে ব্যর্থ হয়েছে");
         }
       );
@@ -123,17 +151,27 @@ export function CastProvider({ children }: CastProviderProps) {
 
     // Set up global callback
     window.__onGCastApiAvailable = (isAvailable) => {
-      console.log("__onGCastApiAvailable called, isAvailable:", isAvailable);
+      console.log("=== __onGCastApiAvailable Callback ===");
+      console.log("8. SDK Available:", isAvailable);
       if (isAvailable) {
+        console.log("9. Attempting to initialize Cast API...");
         initializeCastApi();
       } else {
-        console.error("Cast API not available - are you using Chrome or Edge browser?");
+        console.error("❌ Cast API not available!");
+        console.error("   Possible reasons:");
+        console.error("   - Not using Chrome/Edge browser");
+        console.error("   - Not on HTTPS or localhost");
+        console.error("   - Script failed to load");
+        setError("এই ব্রাউজারে কাস্ট সমর্থিত নয়। Chrome বা Edge ব্যবহার করুন।");
       }
     };
 
     // If SDK is already loaded, initialize immediately
     if (window.chrome && window.chrome.cast && window.chrome.cast.isAvailable) {
+      console.log("10. SDK already loaded, initializing immediately");
       initializeCastApi();
+    } else {
+      console.log("10. Waiting for SDK to load via __onGCastApiAvailable callback...");
     }
   }, [sessionListener, receiverListener]);
 
