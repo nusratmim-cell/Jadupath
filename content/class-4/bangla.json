@@ -1,0 +1,121 @@
+{
+  "book_name": "bangla",
+  "total_chapters": 23,
+  "chapters": [
+    {
+      "name": "01_রূপময়_বাংলাদেশ",
+      "start_page": 1,
+      "end_page": 6
+    },
+    {
+      "name": "02_কেমন_বড়াই",
+      "start_page": 7,
+      "end_page": 10
+    },
+    {
+      "name": "03_শুভেচ্ছা_জানাই",
+      "start_page": 11,
+      "end_page": 15
+    },
+    {
+      "name": "04_ভাষার_খেলা",
+      "start_page": 16,
+      "end_page": 21
+    },
+    {
+      "name": "05_জন্মেছি_এই_দেশে",
+      "start_page": 22,
+      "end_page": 26
+    },
+    {
+      "name": "06_দোয়েল_পাখি",
+      "start_page": 27,
+      "end_page": 33
+    },
+    {
+      "name": "07_একুশের_কবিতা",
+      "start_page": 34,
+      "end_page": 37
+    },
+    {
+      "name": "08_চিল_ও_বিড়াল",
+      "start_page": 38,
+      "end_page": 43
+    },
+    {
+      "name": "09_বৃষ্টির_ছড়া",
+      "start_page": 44,
+      "end_page": 47
+    },
+    {
+      "name": "10_ময়নামতি",
+      "start_page": 48,
+      "end_page": 55
+    },
+    {
+      "name": "11_বাঘখেকো_শিয়ালের_ছানা",
+      "start_page": 56,
+      "end_page": 62
+    },
+    {
+      "name": "12_কাজলা_দিদি",
+      "start_page": 63,
+      "end_page": 67
+    },
+    {
+      "name": "13_দানবীর_মুহসিন",
+      "start_page": 68,
+      "end_page": 72
+    },
+    {
+      "name": "14_অমল_ও_দইওয়ালা",
+      "start_page": 73,
+      "end_page": 78
+    },
+    {
+      "name": "15_প্রিয়_স্বাধীনতা",
+      "start_page": 79,
+      "end_page": 82
+    },
+    {
+      "name": "16_সোনার_থালা",
+      "start_page": 83,
+      "end_page": 88
+    },
+    {
+      "name": "17_লিচু-চোর",
+      "start_page": 89,
+      "end_page": 93
+    },
+    {
+      "name": "18_মহীয়সী_নারী",
+      "start_page": 94,
+      "end_page": 98
+    },
+    {
+      "name": "19_লাল_জামা",
+      "start_page": 99,
+      "end_page": 103
+    },
+    {
+      "name": "20_চারদিকে_দেখি",
+      "start_page": 104,
+      "end_page": 108
+    },
+    {
+      "name": "21_ভয়_পেয়ো_না",
+      "start_page": 109,
+      "end_page": 112
+    },
+    {
+      "name": "22_খলিফা_উমর_(রা)",
+      "start_page": 113,
+      "end_page": 119
+    },
+    {
+      "name": "23_পাঠাগারের_সদস্য_হই",
+      "start_page": 120,
+      "end_page": 125
+    }
+  ]
+}

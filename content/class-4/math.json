@@ -1,0 +1,61 @@
+{
+  "book_name": "math",
+  "total_chapters": 11,
+  "chapters": [
+    {
+      "name": "01_সংখ্যা_ও_স্থানীয়_মান",
+      "start_page": 1,
+      "end_page": 22
+    },
+    {
+      "name": "02_যোগ_ও_বিয়োগ",
+      "start_page": 23,
+      "end_page": 40
+    },
+    {
+      "name": "03_গুণ",
+      "start_page": 41,
+      "end_page": 48
+    },
+    {
+      "name": "04_ভাগ",
+      "start_page": 49,
+      "end_page": 66
+    },
+    {
+      "name": "05_গাণিতিক_বাক্য",
+      "start_page": 67,
+      "end_page": 80
+    },
+    {
+      "name": "06_গুণিতক_ও_গুণনীয়ক",
+      "start_page": 81,
+      "end_page": 96
+    },
+    {
+      "name": "07_সাধারণ_ভগ্নাংশ",
+      "start_page": 97,
+      "end_page": 110
+    },
+    {
+      "name": "08_দশমিক_ভগ্নাংশ",
+      "start_page": 111,
+      "end_page": 120
+    },
+    {
+      "name": "09_পরিমাপ",
+      "start_page": 121,
+      "end_page": 142
+    },
+    {
+      "name": "10_জ্যামিতি",
+      "start_page": 143,
+      "end_page": 168
+    },
+    {
+      "name": "11_উপাত্ত_সংগ্রহ_ও_বিন্যস্তকরণ",
+      "start_page": 169,
+      "end_page": 185
+    }
+  ]
+}

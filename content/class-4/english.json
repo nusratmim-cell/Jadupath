@@ -1,0 +1,96 @@
+{
+  "book_name": "english",
+  "total_chapters": 18,
+  "chapters": [
+    {
+      "name": "01_Introducing_One_Another",
+      "start_page": 1,
+      "end_page": 3
+    },
+    {
+      "name": "02_Have_a_Great_Day",
+      "start_page": 4,
+      "end_page": 5
+    },
+    {
+      "name": "03_My_School_Assembly",
+      "start_page": 6,
+      "end_page": 8
+    },
+    {
+      "name": "04_Enjoying_Annual_Sports",
+      "start_page": 9,
+      "end_page": 11
+    },
+    {
+      "name": "05_The_Little_Doctor",
+      "start_page": 12,
+      "end_page": 17
+    },
+    {
+      "name": "06_Sounds_and_Numbers",
+      "start_page": 18,
+      "end_page": 21
+    },
+    {
+      "name": "07_Telling_the_Time",
+      "start_page": 22,
+      "end_page": 26
+    },
+    {
+      "name": "08_My_Family",
+      "start_page": 27,
+      "end_page": 33
+    },
+    {
+      "name": "09_Gardening",
+      "start_page": 34,
+      "end_page": 40
+    },
+    {
+      "name": "10_A_Letter_to_a_Friend",
+      "start_page": 41,
+      "end_page": 45
+    },
+    {
+      "name": "11_A_Holiday_Trip",
+      "start_page": 46,
+      "end_page": 50
+    },
+    {
+      "name": "12_Making_Friends",
+      "start_page": 51,
+      "end_page": 56
+    },
+    {
+      "name": "13_Planning_to_Visit_the_Book_Fair",
+      "start_page": 57,
+      "end_page": 63
+    },
+    {
+      "name": "14_Poem:_Tears_of_the_Earth",
+      "start_page": 64,
+      "end_page": 66
+    },
+    {
+      "name": "15_Environment_Pollution",
+      "start_page": 67,
+      "end_page": 70
+    },
+    {
+      "name": "16_Talking_with_a_Nepalese_Boy",
+      "start_page": 71,
+      "end_page": 76
+    },
+    {
+      "name": "17_The_Land_of_Mountains",
+      "start_page": 77,
+      "end_page": 81
+    },
+    {
+      "name": "18_Caring_for_Others",
+      "start_page": 82,
+      "end_page": 87
+    }
+  ]
+}

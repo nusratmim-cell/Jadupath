@@ -1,0 +1,120 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║              BACKUP UPDATED - 3rd February 2026                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+📍 Location: /home/shikho/Downloads/Teacher SaaS_3rd Feb
+
+✅ LATEST UPDATES APPLIED:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 FILES UPDATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✅ src/app/profile/page.tsx
+   └─ Fixed: Classes & Subjects section now shows ONLY in Summary tab
+   └─ Before: Showed on all tabs ❌
+   └─ After: Shows only in সারসংক্ষেপ (Summary) tab ✅
+
+2. ✅ src/app/page.tsx
+   └─ Removed: "জাদুপাথ টিচার পোর্টাল" banner text
+   └─ Kept: Jaadupath logo only
+   └─ Result: Cleaner login page
+
+3. ✅ src/app/reports/page.tsx
+   └─ Added: Dynamic subject filter (all 5 subjects)
+   └─ Added: OCR upload button "খাতা থেকে নম্বর আপলোড করুন"
+   └─ Integrated: KhataOCRModal component
+
+4. ✅ src/components/KhataOCRModal.tsx
+   └─ 5-step OCR wizard (Upload → Process → Preview → Confirm → Success)
+   └─ Multi-image support (up to 5 images)
+   └─ Editable preview table
+   └─ Student matching & auto-creation
+
+5. ✅ src/lib/khataOCRHelpers.ts
+   └─ Helper utilities for OCR
+   └─ Bengali numeral conversion
+   └─ Data validation
+   └─ Fuzzy name matching
+
+6. ✅ src/app/api/extract-khata-marks/route.ts
+   └─ Gemini Vision API endpoint
+   └─ Multi-image processing
+   └─ Rate limiting (10 req/min)
+   └─ Structured JSON extraction
+
+7. ✅ src/app/lesson-plans/page.tsx [FIXED - WORKING NOW]
+   └─ Fixed: Empty Chapter & Topic dropdowns
+   └─ Added: Subject selector (no longer hardcoded to "math")
+   └─ Changed: Now fetches chapters/topics from Supabase database
+   └─ Uses: getCachedChapters() from @/lib/content
+   └─ Added: Loading state while fetching data
+   └─ Added: Helpful warnings when no data available
+   └─ Added: Subject badge display in saved plans
+   └─ Chapters/topics now load dynamically from database
+
+8. ✅ src/app/ai/page.tsx [LATEST FIX - WORKING NOW]
+   └─ Fixed: Missing subject selector in AI Planner
+   └─ Added: Subject selector between Class and Chapter
+   └─ Changed: Now fetches chapters/topics from Supabase database
+   └─ Uses: getCachedChapters() from @/lib/content
+   └─ Added: Loading state while fetching data
+   └─ Added: Helpful warnings when no data available
+   └─ Updated: API call includes subject name for better context
+   └─ Chapters/topics now load dynamically from database
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 FEATURES SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ Handwritten Khata OCR
+   • Extract marks from handwritten register
+   • AI-powered with Gemini Vision API
+   • Multi-image upload support
+   • Bengali numeral auto-conversion
+   • Student auto-matching
+   • Editable preview before saving
+
+✨ Dynamic Subject Filter
+   • All 5 subjects in reports
+   • Subject-specific marks tracking
+
+✨ UI Improvements
+   • Removed duplicate profile sections
+   • Cleaner login page
+   • Better tab organization
+
+✨ Lesson Planning & AI Planner Fix [LATEST - NOW WORKING]
+   • Fixed empty Chapter/Topic dropdowns ✅
+   • Added subject selector to both pages ✅
+   • Now fetches from Supabase database ✅
+   • Dynamic data loading by subject ✅
+   • Loading state while fetching ✅
+   • Warning messages for missing data ✅
+   • AI Planner now includes subject in generation ✅
+
+⚠️ IMPORTANT NOTE:
+   Lesson planning now fetches chapter/topic data from Supabase database
+   using getCachedChapters() from src/lib/content.ts.
+
+   Make sure your Supabase tables are populated:
+   - chapters table (class_id, subject_id, name, display_order)
+   - topics table (chapter_id, name, description, display_order)
+
+   The app will automatically cache this data for 5 minutes for better performance.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 BACKUP STATUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ All files synchronized
+✅ Latest changes included
+✅ Ready to restore anytime
+
+Source: /home/shikho/Downloads/Teacher SaaS Rebranding
+Backup: /home/shikho/Downloads/Teacher SaaS_3rd Feb
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Last Updated: 3rd February 2026
+Status: ✅ SYNCHRONIZED

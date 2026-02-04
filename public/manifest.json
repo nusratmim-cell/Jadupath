@@ -1,0 +1,20 @@
+{
+  "name": "শিখো টিচার পোর্টাল",
+  "short_name": "শিখো টিচার",
+  "description": "বাংলাদেশের শিক্ষকদের জন্য ডিজিটাল ক্লাসরুম পোর্টাল",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#354894",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/shikho-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "bn"
+}

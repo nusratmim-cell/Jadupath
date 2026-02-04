@@ -1,0 +1,71 @@
+{
+  "classId": "4",
+  "subjectId": "math",
+  "chapters": [
+    {
+      "id": "class-4-math-chapter-1",
+      "name": "স্বাভাবিক সংখ্যা",
+      "displayOrder": 1,
+      "topics": [
+        {
+          "id": "class-4-math-ch1-topic1",
+          "name": "যোগ ও বিয়োগ",
+          "description": "যোগ ও বিয়োগের মৌলিক ধারণা",
+          "displayOrder": 1,
+          "pdfStartPage": 5,
+          "pdfEndPage": 12,
+          "nctbBook": {
+            "title": "গণিত - চতুর্থ শ্রেণী",
+            "pdfUrl": "https://example.com/textbook.pdf",
+            "pages": 150
+          },
+          "video": {
+            "title": "যোগ ও বিয়োগ শিখি",
+            "url": "https://youtube.com/watch?v=example",
+            "duration": "১৫ মিনিট",
+            "thumbnail": "https://example.com/thumbnail.jpg"
+          }
+        },
+        {
+          "id": "class-4-math-ch1-topic2",
+          "name": "গুণ ও ভাগ",
+          "description": "গুণ ও ভাগের মৌলিক ধারণা",
+          "displayOrder": 2,
+          "pdfStartPage": 13,
+          "pdfEndPage": 20,
+          "nctbBook": {
+            "title": "গণিত - চতুর্থ শ্রেণী",
+            "pdfUrl": "https://example.com/textbook.pdf",
+            "pages": 150
+          },
+          "video": {
+            "title": "গুণ ও ভাগ শিখি",
+            "url": "https://youtube.com/watch?v=example2",
+            "duration": "২০ মিনিট",
+            "thumbnail": "https://example.com/thumbnail2.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "class-4-math-chapter-2",
+      "name": "ভগ্নাংশ",
+      "displayOrder": 2,
+      "topics": [
+        {
+          "id": "class-4-math-ch2-topic1",
+          "name": "ভগ্নাংশের পরিচিতি",
+          "description": "ভগ্নাংশ কী এবং কীভাবে প্রকাশ করা হয়",
+          "displayOrder": 1,
+          "pdfStartPage": 21,
+          "pdfEndPage": 28,
+          "nctbBook": {
+            "title": "গণিত - চতুর্থ শ্রেণী",
+            "pdfUrl": "https://example.com/textbook.pdf",
+            "pages": 150
+          }
+        }
+      ]
+    }
+  ]
+}
