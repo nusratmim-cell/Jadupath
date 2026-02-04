@@ -516,7 +516,7 @@ export default function TopicLearningPage() {
                   <div className="relative bg-gray-100 flex items-center justify-center min-h-[500px]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={`/${topic.images[currentImageIndex]}`}
+                      src={topic.images[currentImageIndex].startsWith('http') ? topic.images[currentImageIndex] : `/${topic.images[currentImageIndex]}`}
                       alt={`পৃষ্ঠা ${currentImageIndex + 1}`}
                       className="max-w-full max-h-[600px] object-contain"
                       onError={(e) => {
@@ -565,7 +565,7 @@ export default function TopicLearningPage() {
                         >
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
-                            src={`/${img}`}
+                            src={img.startsWith('http') ? img : `/${img}`}
                             alt={`পৃষ্ঠা ${idx + 1}`}
                             className="w-full h-full object-cover"
                             onError={(e) => {
